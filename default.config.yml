@@ -22,9 +22,9 @@ sudoers_custom_config: ""
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: git@github.com:elmpp/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/dev/dotfiles-ansible-managed
 dotfiles_repo_version: master # Replace with your default branch
 dotfiles_files:
   - .zshrc
@@ -32,6 +32,16 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+# dotfiles_repo: https://github.com/elmpp/dotfiles.git
+# dotfiles_repo_accept_hostkey: true
+# dotfiles_repo_local_destination: ~/dev/dotfiles-ansible-managed
+# dotfiles_repo_version: master # Replace with your default branch
+# dotfiles_files:
+#   - simpler.zshrc
+#   - .gitignore
+#   - .inputrc
+#   - .osx
+#   - .vimrc
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -60,8 +70,10 @@ homebrew_installed_packages:
   - wget
   - wrk
   - zsh-history-substring-search
+  - java
 
 homebrew_taps: []
+
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -70,12 +82,31 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
+  - arc
   - handbrake
-  - licecap
-  - sequel-ace
+  # - licecap
+  # - sequel-ace
   - slack
   - sublime-text
   - transmit
+# added by me
+  - arc
+  - cursor
+  - tableplus
+  - raycast
+  - whatsapp
+  - obsidian
+  - gemini
+  - iterm2
+  - rectangle
+  - bitwarden
+  - 1password
+  - notion
+  - visual-studio-code
+  - ticktick
+  - beekeeper-studio
+
+homebrew_cask_accept_external_apps: true # https://github.com/geerlingguy/mac-dev-playbook/issues/80#issuecomment-620567930
 
 # See `geerlingguy.mac.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -121,6 +152,11 @@ sublime_package_control:
   - "Theme - Cobalt2"
   - "TrailingSpaces"
   - "WordingStatus"
+
+# Set to 'true' to configure VS Code extensions.
+configure_vscode_extensions: true
+visual_studio_code_extensions:
+  - shan.code-settings-sync
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

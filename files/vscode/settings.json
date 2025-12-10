@@ -1,0 +1,34 @@
+{
+    "sync.gist": "",
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.lastUpload": "",
+    "sync.lastDownload": "",
+    "sync.lastUpdate": "",
+    "sync.config": {
+        "sync.gist": "",
+        "sync.autoDownload": true,
+        "sync.autoUpload": true,
+        "sync.lastUpload": "",
+        "sync.lastDownload": "",
+        "sync.lastUpdate": ""
+    },
+    "sync.anonymousGist": false,
+    "sync.host": "github",
+    "sync.path": "/Users/matt/Library/Application Support/Code/User",
+    "sync.skipExtensions": [],
+    "sync.syncExtensions": true,
+    "sync.quietSync": false,
+    "sync.askOnStartup": true,
+    "sync.askOnClose": true,
+    "sync.removeExtensions": true,
+    "sync.replaceSettings": true,
+    "sync.advanced": {},
+    "sync.ignoreSettings": [],
+    "sync.ignoreExtensions": [],
+    "sync.forceDownload": false,
+    "sync.host": "github",
+    "sync.githubToken": ""
+}
+
+
