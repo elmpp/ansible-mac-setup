@@ -71,6 +71,8 @@ homebrew_installed_packages:
   - wrk
   - zsh-history-substring-search
   - java
+  - claude-code
+  - gcloud-cli # Google Cloud CLI
 
 homebrew_taps: []
 
