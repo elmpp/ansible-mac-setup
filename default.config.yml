@@ -73,8 +73,17 @@ homebrew_installed_packages:
   - java
   - claude-code
   - gcloud-cli # Google Cloud CLI
+  - gemini-cli # Google Cloud CLI
+  - bun
+  - gitbutler
+  - gh # github cli - https://github.com/cli/cli/blob/trunk/docs/install_macos.md#homebrew
+  - ghostty # rust terminal emulator - https://ghostty.org
+  - tmux # tmux - https://github.com/tmux/tmux
+  - uv # uv - https://github.com/lukechilds/uv
+  - bruno # https://github.com/bruno/bruno
+  - linphone # https://www.linphone.org/technical-corner/linphone/downloads
 
-homebrew_taps: []
+homebrew_taps: [oven-sh/bun]
 
 
 homebrew_cask_appdir: /Applications
@@ -159,6 +168,10 @@ sublime_package_control:
 configure_vscode_extensions: true
 visual_studio_code_extensions:
   - shan.code-settings-sync
+  - google.gemini-cli-vscode-ide-companion # https://marketplace.visualstudio.com/items?itemName=Google.gemini-cli-vscode-ide-companion
+  - jlcodes.antigravity-cockpit # https://www.reddit.com/r/google_antigravity/comments/1pyt789/comment/nwl3ode/?context=3
+  - yzhang.markdown-all-in-one # https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+  - adautomendes.yaml2table-preview # https://marketplace.visualstudio.com/items?itemName=adautomendes.yaml2table-preview
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
